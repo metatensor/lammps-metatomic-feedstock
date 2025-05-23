@@ -1,0 +1,112 @@
+{% set version = "2Apr2025" %}
+{% set date = datetime.datetime.strptime(version, "%d%b%Y") %}
+{% set conda_version = "{:%Y.%m.%d}".format(date) %}
+
+{% set build = 0 %}
+{% set git_rev = "2a07d5ba1829272c6f4b0036545e4f38d0c41c8c" %}
+# increase this by 1 everytime you change the git commit above without also
+# changing the `version`
+{% set git_rev_count = "0" %}
+
+# Use a higher build number for prefered variants, to ensure that they are
+# picked first by conda's solver, and installed where the platform supports it.
+{% if cuda_compiler_version == "None" %}
+# pick CPU before GPU
+{% set build = build + 10000 %}
+{% endif %}
+
+# pick openmpi first, then mpich, then no-mpi variant
+{% if mpi == 'openmpi' %}
+  {% set build = build + 2000 %}
+{% endif %}
+
+{% if mpi == 'mpich' %}
+  {% set build = build + 1000 %}
+{% endif %}
+
+{% if mpi != 'nompi' %}
+  {% set mpi_prefix = "mpi_" + mpi %}
+{% else %}
+  {% set mpi_prefix = "nompi" %}
+{% endif %}
+
+{% if cuda_compiler_version != "None" %}
+  {% set cuda_prefix = "cuda" + environ.get("cuda_compiler_version", "0.0").replace(".", "") %}
+  {% set cuda_prefix = cuda_prefix + "_kokkos_arch_" + environ.get("kokkos_arch", "") %}
+{% else %}
+  {% set cuda_prefix = "cpu" %}
+{% endif %}
+
+
+package:
+  name: lammps-metatomic
+  version: {{ conda_version }}.mta{{ git_rev_count }}
+
+source:
+  git_url: https://github.com/metatensor/lammps.git
+  git_rev: {{ git_rev }}
+  depth: 1
+  patches:
+    - kokkos-log2-vectorsize.patch
+
+
+build:
+  number: {{ build }}
+  skip: True  # [win]
+  skip: True  # [cuda_compiler_version == "11.8"]
+  skip: True  # [linux and kokkos_arch == "None" and cuda_compiler_version != "None"]
+  skip: True  # [linux and kokkos_arch != "None" and cuda_compiler_version == "None"]
+  string: {{cuda_prefix}}_h{{ PKG_HASH }}_{{ mpi_prefix }}_git.{{ git_rev[:7] }}_{{ PKG_BUILDNUM }}
+
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
+    - {{ compiler('cuda') }}  # [cuda_compiler_version != "None"]
+    - {{ mpi }}               # [build_platform != target_platform and mpi == "openmpi"]
+    - make
+    - cmake
+    - pkg-config
+    - llvm-openmp  # [osx]
+    - libgomp      # [linux]
+
+  host:
+    - {{ mpi }}  # [mpi != 'nompi']
+    - cuda-version {{ cuda_compiler_version }} # [cuda_compiler_version != "None"]
+    - cuda-toolkit  {{ cuda_compiler_version }} # [cuda_compiler_version != "None"]
+    - fftw * {{ mpi_prefix }}_*
+    - plumed
+    - libmetatomic-torch >=0.1.0,<0.2.0
+    # always build against the CPU version of libtorch, we can still pick the
+    # cuda one at runtime
+    - libtorch * cpu*
+  run:
+    - {{ mpi }}  # [mpi != 'nompi']
+    - plumed
+    - libmetatomic-torch >=0.1.0,<0.2.0
+    - libmetatensor-torch >=0.7.6,<0.8.0
+    - libmetatensor >=0.1.14,<0.2.0
+    - {{ pin_compatible('cuda-version', max_pin='x', min_pin='x') }}  # [cuda_compiler_version != "None"]
+    - libcufft  # [cuda_compiler_version != "None"]
+
+test:
+  commands:
+    - export OMPI_MCA_plm_rsh_agent=false
+    - lmp -h  # [mpi == 'nompi' and cuda_compiler_version == "None"]
+    - mpirun -np 2 lmp -h  # [mpi != 'nompi' and cuda_compiler_version == "None"]
+
+about:
+  home: https://docs.metatensor.org/metatomic/latest/engines/lammps.html
+  license:  GPL-2.0-only
+  license_family: GPL
+  summary: 'Metatomic-enabled version of LAMMPS'
+  description: Metatomic-enabled version of LAMMPS
+  doc_url: https://docs.metatensor.org/metatomic/latest/engines/lammps.html
+  dev_url: https://github.com/metatensor/lammps
+
+extra:
+  recipe-maintainers:
+    - abmazitov
+    - Luthaf

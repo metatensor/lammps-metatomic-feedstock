@@ -12,6 +12,7 @@ cdt_name:
 - conda
 channel_sources:
 - conda-forge
+- metatensor
 channel_targets:
 - metatensor main
 cuda_compiler:

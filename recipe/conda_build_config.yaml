@@ -17,6 +17,9 @@ kokkos_arch:       # [linux]
   # - BLACKWELL100   # [linux]
   # - BLACKWELL120   # [linux]
 
-
 channel_targets:
   - metatensor main
+
+channel_sources:
+  - metatensor
+  - conda-forge

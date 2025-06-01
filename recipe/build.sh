@@ -49,8 +49,9 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DPLUMED_MODE="shared" \
       -DPKG_KSPACE=ON \
       -DPKG_MANIFOLD=ON \
-      -DPKG_ML-METATENSOR=ON \
+      -DPKG_ML-METATOMIC=ON \
       -DDOWNLOAD_METATENSOR=OFF \
+      -DDOWNLOAD_METATOMIC=OFF \
       -DPKG_QTB=ON \
       -DPKG_REACTION=ON \
       -DPKG_RIGID=ON \
@@ -58,6 +59,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DPKG_SPIN=ON \
       -DPKG_MPIIO=$ENABLE_MPI \
       -DPKG_EXTRA_PAIR=ON \
+      -DPKG_EXTRA_FIX=ON \
       $CMAKE_ARGS \
       ../cmake
 

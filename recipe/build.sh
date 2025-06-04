@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eux
+
 PLATFORM=$(uname)
 
 if [[ "$PLATFORM" == 'Darwin' ]]; then
@@ -24,10 +26,10 @@ elif [[ "$PLATFORM" == 'Linux' ]]; then
   fi
 fi
 
-if [ "${mpi}" == "nompi" ]; then
+if [[ "${mpi}" == "nompi" ]]; then
   ENABLE_MPI=OFF
 else
-  ENABLE_MPI=TRUE
+  ENABLE_MPI=ON
 fi
 
 

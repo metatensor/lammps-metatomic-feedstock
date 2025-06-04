@@ -60,8 +60,8 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DPKG_SHOCK=ON \
       -DPKG_SPIN=ON \
       -DPKG_MPIIO=$ENABLE_MPI \
-      -DPKG_EXTRA_PAIR=ON \
-      -DPKG_EXTRA_FIX=ON \
+      -DPKG_EXTRA-PAIR=ON \
+      -DPKG_EXTRA-FIX=ON \
       $CMAKE_ARGS \
       ../cmake
 

@@ -1,9 +1,9 @@
-{% set version = "2Apr2025" %}
+{% set version = "12Jun2025" %}
 {% set date = datetime.datetime.strptime(version, "%d%b%Y") %}
 {% set conda_version = "{:%Y.%m.%d}".format(date) %}
 
-{% set build = 3 %}
-{% set git_rev = "2a07d5ba1829272c6f4b0036545e4f38d0c41c8c" %}
+{% set build = 0 %}
+{% set git_rev = "5eda6338cd4cf7ea50a203af4c7c0a3536d61e4e" %}
 # increase this by 1 everytime you change the git commit above without also
 # changing the `version`
 {% set git_rev_count = "0" %}
@@ -46,8 +46,6 @@ source:
   git_url: https://github.com/metatensor/lammps.git
   git_rev: {{ git_rev }}
   depth: 1
-  patches:
-    - kokkos-log2-vectorsize.patch
 
 
 build:

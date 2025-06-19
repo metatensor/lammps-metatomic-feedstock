@@ -18,7 +18,7 @@ channel_sources:
 channel_targets:
 - metatensor main
 cuda_compiler:
-- None
+- cuda-nvcc
 cuda_compiler_version:
 - None
 cxx_compiler:

@@ -2,11 +2,11 @@
 {% set date = datetime.datetime.strptime(version, "%d%b%Y") %}
 {% set conda_version = "{:%Y.%m.%d}".format(date) %}
 
-{% set build = 1 %}
-{% set git_rev = "5eda6338cd4cf7ea50a203af4c7c0a3536d61e4e" %}
+{% set build = 0 %}
+{% set git_rev = "a614dcad8d66beae4637e17311884798053b53a0" %}
 # increase this by 1 everytime you change the git commit above without also
 # changing the `version`
-{% set git_rev_count = "0" %}
+{% set git_rev_count = "1" %}
 
 # Use a higher build number for prefered variants, to ensure that they are
 # picked first by conda's solver, and installed where the platform supports it.

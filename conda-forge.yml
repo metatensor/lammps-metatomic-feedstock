@@ -6,6 +6,7 @@ github_actions:
   triggers:
   - push
   - pull_request
+  free_disk_space: [apt, cache, docker]
 
 provider:
   linux_64: github_actions

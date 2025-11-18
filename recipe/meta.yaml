@@ -3,10 +3,10 @@
 {% set conda_version = "{:%Y.%m.%d}".format(date) %}
 
 {% set build = 0 %}
-{% set git_rev = "e9b222e03c1a0b81dd183f398e536e38a28b75da" %}
+{% set git_rev = "a030379a28a23fe87a63837bbf5e7b79ffbaad94" %}
 # increase this by 1 everytime you change the git commit above without also
 # changing the `version`
-{% set git_rev_count = "0" %}
+{% set git_rev_count = "1" %}
 
 # Use a higher build number for prefered variants, to ensure that they are
 # picked first by conda's solver, and installed where the platform supports it.
@@ -83,8 +83,8 @@ requirements:
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - plumed-metatomic * {{ mpi_prefix }}*
-    - libmetatomic-torch >=0.1.5,<0.2.0
-    - libmetatensor-torch >=0.8.1,<0.9.0
+    - libmetatomic-torch >=0.1.6,<0.2.0
+    - libmetatensor-torch >=0.8.2,<0.9.0
     - libmetatensor >=0.1.17,<0.2.0
     - {{ pin_compatible('cuda-version', max_pin='x', min_pin='x') }}  # [cuda_compiler_version != "None"]
     - libcufft  # [cuda_compiler_version != "None"]

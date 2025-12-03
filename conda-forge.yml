@@ -13,3 +13,8 @@ provider:
   osx_64: github_actions
   osx_arm64: github_actions
   linux_aarch64: github_actions
+
+os_version:
+  linux_64: alma8
+  linux_aarch64: alma8
+  linux_ppc64le: alma8

@@ -80,6 +80,7 @@ requirements:
     # always build against the CPU version of libtorch, we can still pick the
     # cuda one at runtime
     - libtorch * cpu*
+    - libtorch
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - plumed-metatomic * {{ mpi_prefix }}*

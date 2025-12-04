@@ -7,6 +7,7 @@ github_actions:
   - push
   - pull_request
   free_disk_space: [apt, cache, docker]
+  store_build_artifacts: true
 
 provider:
   linux_64: github_actions

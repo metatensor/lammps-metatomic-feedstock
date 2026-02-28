@@ -21,434 +21,218 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archADA89mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_h1c93dc4b
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archADA89mpimpich
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h15798f2b
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archADA89mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hf0953852
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archADA89mpinompi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_hfb2a64c5
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archADA89mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_h8058d811
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archADA89mpiopenmpi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_hb3140566
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE80mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_h67bd0fc1
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archAMPERE80mpimpich
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_hb8e74644
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE80mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hb51e29cc
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archAMPERE80mpinompi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h398274cc
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE80mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_h34a13695
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archAMPERE80mpiopenmpi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_he9dab72a
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE86mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hda28c75a
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archAMPERE86mpimpich
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h350f4763
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE86mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hd42d244b
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archAMPERE86mpinompi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h4c708427
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE86mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_h76ee9ab1
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archAMPERE86mpiopenmpi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h813a7aff
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archHOPPER90mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hc7cf6030
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archHOPPER90mpimpich
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_hf8b49cb6
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archHOPPER90mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_h183f9af0
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archHOPPER90mpinompi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h24e0da9c
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archHOPPER90mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_h3c1ffb2d
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archHOPPER90mpiopenmpi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h3f333ef6
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archNonempimpich
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hfee978ba
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archVOLTA70mpimpich
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h60c80412
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archNonempinompi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hff73353d
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archVOLTA70mpinompi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h7a923247
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archNonempiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_he933396c
+          - CONFIG: linux_64_cuda_compiler_version12.9kokkos_archVOLTA70mpiopenmpi
+            SHORT_CONFIG: linux_64_cuda_compiler_version12.9kokkos_h39b870eb
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archVOLTA70mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hbf7dc66d
+          - CONFIG: linux_64_cuda_compiler_versionNonekokkos_archNonempimpich
+            SHORT_CONFIG: linux_64_cuda_compiler_versionNonekokkos_h01535f86
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archVOLTA70mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_heedd8442
+          - CONFIG: linux_64_cuda_compiler_versionNonekokkos_archNonempinompi
+            SHORT_CONFIG: linux_64_cuda_compiler_versionNonekokkos_hc5b0e925
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archVOLTA70mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version13cuda_compil_hdc7a1910
+          - CONFIG: linux_64_cuda_compiler_versionNonekokkos_archNonempiopenmpi
+            SHORT_CONFIG: linux_64_cuda_compiler_versionNonekokkos_hcf905c90
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archADA89mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_hd0668ca6
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archADA89mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h584f6f8d
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archADA89mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h971f040e
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE80mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h3dd7ffb7
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE80mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h0e212aa4
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE80mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h5a87f964
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE86mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_he4619878
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE86mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_hd6a9476c
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE86mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h5213fa02
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archHOPPER90mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_hff5f0a58
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archHOPPER90mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h0b3d831c
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archHOPPER90mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_hd63b61e4
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archNonempimpich
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_haea23ec5
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archNonempinompi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_haf65ccac
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archNonempiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h2ea02598
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archVOLTA70mpimpich
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h0832aad6
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archVOLTA70mpinompi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_h1f98add0
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archVOLTA70mpiopenmpi
-            SHORT_CONFIG: linux_64_c_compiler_version14cuda_compil_hbd14d98c
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archADA89mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_had2318cc
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archADA89mpimpich
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h95c73331
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archADA89mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h9fc6d87f
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archADA89mpinompi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_hbc3e8b51
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archADA89mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h36a62eb1
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archADA89mpiopenmpi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h24212d45
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE80mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_ha3cde392
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archAMPERE80mpimpich
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_hdfdd0390
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE80mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_hfe94e557
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archAMPERE80mpinompi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h6879b5f0
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE80mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h05609ca5
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archAMPERE80mpiopenmpi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h77a210fc
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE86mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_hd594f2c6
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archAMPERE86mpimpich
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_hb106f706
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE86mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h594fb4ae
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archAMPERE86mpinompi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h6c429781
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archAMPERE86mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h48299637
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archAMPERE86mpiopenmpi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_ha68f2b13
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archHOPPER90mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_hec8f63ee
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archHOPPER90mpimpich
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h8c80ec76
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archHOPPER90mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h37fc5dc1
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archHOPPER90mpinompi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h93b3d29c
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archHOPPER90mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h7ef530c4
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archHOPPER90mpiopenmpi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h65717bdd
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archNonempimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_hd6c73253
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archVOLTA70mpimpich
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h3bab9ebf
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archNonempinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h0c97aa2e
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archVOLTA70mpinompi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_h38f2c3b3
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archNonempiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h10a9dc7b
+          - CONFIG: linux_aarch64_cuda_compiler_version12.9kokkos_archVOLTA70mpiopenmpi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_version12.9k_hf563a0e4
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archVOLTA70mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_hbfe8322a
+          - CONFIG: linux_aarch64_cuda_compiler_versionNonekokkos_archNonempimpich
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_versionNonek_h8c9093c6
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archVOLTA70mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_h634c204e
+          - CONFIG: linux_aarch64_cuda_compiler_versionNonekokkos_archNonempinompi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_versionNonek_hcb8b07c0
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version13cuda_compiler_version12.6cxx_compiler_version13kokkos_archVOLTA70mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version13cuda_c_hb301a6b1
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archADA89mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h98e965db
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archADA89mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_ha1551d28
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archADA89mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h96b5d14c
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE80mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_hd57e626b
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE80mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_ha5ff9226
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE80mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h0e2842b0
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE86mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h788d322b
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE86mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h87825984
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archAMPERE86mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h5a980bd0
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archHOPPER90mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h140d22d6
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archHOPPER90mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h492bc0f5
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archHOPPER90mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h5e0cd5c8
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archNonempimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h675eea97
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archNonempinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h54bf990a
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archNonempiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h9d9bd85a
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archVOLTA70mpimpich
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h58a0a3de
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archVOLTA70mpinompi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h9862d5ab
-            UPLOAD_PACKAGES: True
-            os: ubuntu
-            runs_on: ['ubuntu-24.04-arm']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64:alma8
-          - CONFIG: linux_aarch64_c_compiler_version14cuda_compiler_versionNonecxx_compiler_version14kokkos_archVOLTA70mpiopenmpi
-            SHORT_CONFIG: linux_aarch64_c_compiler_version14cuda_c_h84fcdeb8
+          - CONFIG: linux_aarch64_cuda_compiler_versionNonekokkos_archNonempiopenmpi
+            SHORT_CONFIG: linux_aarch64_cuda_compiler_versionNonek_hda2f260f
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-24.04-arm']
@@ -511,7 +295,7 @@ jobs:
         df -h
 
     - name: Checkout code
-      uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
+      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
     - name: Build on Linux
       id: build-linux
@@ -647,7 +431,7 @@ jobs:
         fi
 
     - name: Store conda build artifacts
-      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+      uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
       if: ${{ always() && steps.prepare-artifacts.outcome == 'success' }}
       with:
         name: ${{ steps.prepare-artifacts.outputs.BLD_ARTIFACT_NAME }}
@@ -656,7 +440,7 @@ jobs:
       continue-on-error: true
 
     - name: Store conda build environment artifacts
-      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+      uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
       # only relevant if build failed, see above
       if: ${{ always() && steps.determine-status.outputs.status == 'failure' && steps.prepare-artifacts.outcome == 'success' }}
       with:

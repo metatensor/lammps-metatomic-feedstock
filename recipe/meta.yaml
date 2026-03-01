@@ -2,7 +2,7 @@
 {% set date = datetime.datetime.strptime(version, "%d%b%Y") %}
 {% set conda_version = "{:%Y.%m.%d}".format(date) %}
 
-{% set git_rev = "c1294d3e6ce474c0817655459640988b520ea284" %}
+{% set git_rev = "a1c7f5babac742297de86d3d7c0b12a84219a7d3" %}
 # increase this by 1 everytime you change the git commit above without also
 # changing the `version`
 {% set git_rev_count = "3" %}

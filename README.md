@@ -46,31 +46,73 @@ conda config --add channels metatensor
 conda config --set channel_priority strict
 ```
 
-Once the `metatensor` channel has been enabled, `lammps-metatomic` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install lammps-metatomic
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install lammps-metatomic
 ```
 
-It is possible to list all of the versions of `lammps-metatomic` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add lammps-metatomic
+# for installing globally
+pixi global install lammps-metatomic
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `lammps-metatomic` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search lammps-metatomic --channel metatensor
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search lammps-metatomic --channel metatensor
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search lammps-metatomic --channel metatensor
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -82,6 +124,8 @@ mamba repoquery whoneeds lammps-metatomic --channel metatensor
 # List dependencies of `lammps-metatomic`:
 mamba repoquery depends lammps-metatomic --channel metatensor
 ```
+
+</details>
 
 
 

@@ -7,7 +7,7 @@
 # changing the `version`
 {% set git_rev_count = "1" %}
 
-{% set build = 1 %}
+{% set build = 2 %}
 
 # Use a higher build number for prefered variants, to ensure that they are
 # picked first by conda's solver, and installed where the platform supports it.
@@ -91,7 +91,7 @@ requirements:
     - libfabric1 <2.5.1  # [linux and mpi == 'mpich' and cuda_compiler_version == "None"]
     - plumed-metatomic * {{ mpi_prefix }}*
     - libmetatomic-torch >=0.1.16,<0.2
-    - libmetatensor-torch >=0.10.0,<0.11
+    - libmetatensor-torch >=0.10.4,<0.11
     - libmetatensor >=0.2.0,<0.3
     - {{ pin_compatible('cuda-version', max_pin='x', min_pin='x') }}  # [cuda_compiler_version != "None"]
     - libcufft  # [cuda_compiler_version != "None"]
